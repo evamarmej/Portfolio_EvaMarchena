@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NumeRandom</string>
+    <string name="etq_genera">GENERA</string>
+    <string name="etq_numerotope">Número Tope</string>
+</resources>

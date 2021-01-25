@@ -1,0 +1,15 @@
+
+K
+java:S11215".Extract the assignment out of this expression.(ÜÀµË8ääÈ×.
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(£Â‚øüÿÿÿÿ8ääÈ×.
+P
+java:S11212".Extract the assignment out of this expression.(ÙÚêúÿÿÿÿ8ääÈ×.
+D
+java:S1905A"'Remove this unnecessary cast to "long".(¡ù–8ÿŞ É×.
+P
+java:S1874".Remove this use of "Applet"; it is deprecated.(£Â‚øüÿÿÿÿ8ääÈ×.
+D
+java:S1905@"'Remove this unnecessary cast to "long".(Ëüåé8¬ĞÀÉ×.
+X	java:S125""<This block of commented-out lines of code should be removed.(€ğäã8ääÈ×.
+B
+java:S1659$" Declare "b2" on a separate line.(ƒáøùÿÿÿÿ8ääÈ×.

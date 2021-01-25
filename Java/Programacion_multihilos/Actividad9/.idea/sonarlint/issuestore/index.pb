@@ -1,0 +1,9 @@
+
+j
+:Productor_Consumidor/Productor_Consumidor_2/Productor.java,4\9\49a9c9215c704d948740e67c6279332faf830d56
+n
+>Productor_Consumidor/Productor_Consumidor_2/Produc_Consum.java,f\6\f6a959aeea271b27f636f743be7ddad427cd4338
+k
+;Productor_Consumidor/Productor_Consumidor_2/Consumidor.java,a\2\a25ce6794600d5f2e500960dd543548952fae321
+e
+5Productor_Consumidor/Productor_Consumidor_2/Cola.java,7\6\7650ff39094491d87045cdec5327bc4aa36b4385

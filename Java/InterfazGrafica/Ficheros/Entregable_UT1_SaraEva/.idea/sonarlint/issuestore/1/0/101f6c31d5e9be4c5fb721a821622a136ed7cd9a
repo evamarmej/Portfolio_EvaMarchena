@@ -1,0 +1,117 @@
+
+M
+java:S1172a"2Remove this unused method parameter "actionEvent".(Çß¦¦øÿÿÿÿ
+r
+java:S11043"WMake fieldNombre a static final constant or non-public and provide accessors if needed.(Ê€žèøÿÿÿÿ
+u
+java:S1104."ZMake botNuevoFichCF a static final constant or non-public and provide accessors if needed.(”›ÿõúÿÿÿÿ
+R	java:S125ö"<This block of commented-out lines of code should be removed.(®ß¼˜
+r
+java:S1104"WMake paneGestion a static final constant or non-public and provide accessors if needed.(ÄÚÕÇýÿÿÿÿ
+N
+java:S1172–"2Remove this unused method parameter "actionEvent".(³¶Â×ýÿÿÿÿ
+N
+java:S1172þ"2Remove this unused method parameter "actionEvent".(Ðä™Èøÿÿÿÿ
+k
+java:S1104"UMake botBorrar a static final constant or non-public and provide accessors if needed.(ôóÅÄ
+L
+java:S1128"6Remove this unused import 'javafx.fxml.Initializable'.(™ÎùÆ
+p
+java:S1104"UMake botCifrar a static final constant or non-public and provide accessors if needed.(±èèýÿÿÿÿÿ
+o
+java:S11042"YMake paneNuevoFich a static final constant or non-public and provide accessors if needed.(¦ç”
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ï‡Î£
+s
+java:S1104,"]Make etiNuevoConfirmCF a static final constant or non-public and provide accessors if needed.(€°šÿ
+t
+java:S1104-"YMake fieldNombreCF a static final constant or non-public and provide accessors if needed.(æ’ÌÒùÿÿÿÿ
+N
+java:S1172¹"2Remove this unused method parameter "actionEvent".(òðÎÉþÿÿÿÿ
+q
+java:S1104"VMake botContPal a static final constant or non-public and provide accessors if needed.(úïî‹ýÿÿÿÿ
+n
+java:S1104#"SMake etiGuia a static final constant or non-public and provide accessors if needed.(«ºñ‰üÿÿÿÿ
+I
+java:S1172­"2Remove this unused method parameter "actionEvent".(ìÝàé
+q
+java:S1104+"[Make etiNuevoErrorCF a static final constant or non-public and provide accessors if needed.(Ðßà¾
+I
+java:S1172Ì"2Remove this unused method parameter "actionEvent".(€Šî
+N
+java:S1172©"2Remove this unused method parameter "actionEvent".(Ò««„þÿÿÿÿ
+r
+java:S1104"WMake botEditCont a static final constant or non-public and provide accessors if needed.(ƒ›ðëúÿÿÿÿ
+v
+java:S11048"[Make etiNuevoConfirm a static final constant or non-public and provide accessors if needed.(­³æÃûÿÿÿÿ
+D
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ
+I
+java:S1172æ"2Remove this unused method parameter "actionEvent".(„ýÇ½
+N
+java:S1172ç"2Remove this unused method parameter "actionEvent".(ãñì®øÿÿÿÿ
+B
+java:S1075Ô"&Remove this hard-coded path-delimiter.(´ÑÈ°øÿÿÿÿ
+M
+java:S1172?"2Remove this unused method parameter "actionEvent".(¢°õ€ÿÿÿÿÿ
+q
+java:S1104"VMake botSelFich a static final constant or non-public and provide accessors if needed.(©î¨äùÿÿÿÿ
+N
+java:S1172‰"2Remove this unused method parameter "actionEvent".(¨ë¬ÿÿÿÿÿ
+p
+java:S1104)"ZMake botUbicacionCF a static final constant or non-public and provide accessors if needed.(›Èä•
+l
+java:S1104$"VMake etiConfirm a static final constant or non-public and provide accessors if needed.(ÞÈæÿ
+h
+java:S2095®"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ýÃÍÿÿÿÿÿÿ
+N
+java:S1172„"2Remove this unused method parameter "actionEvent".(ãÓèÒúÿÿÿÿ
+p
+java:S11049"UMake botVolver a static final constant or non-public and provide accessors if needed.(ñžÒèþÿÿÿÿ
+v
+java:S1104("[Make paneNuevoFichCF a static final constant or non-public and provide accessors if needed.(»Å·ùÿÿÿÿ
+q
+java:S1104 "VMake botContVoc a static final constant or non-public and provide accessors if needed.(ÝÄµ©ýÿÿÿÿ
+t
+java:S11045"YMake fieldRutaUbic a static final constant or non-public and provide accessors if needed.(Ë‰Çæÿÿÿÿÿ
+M
+java:S1172r"2Remove this unused method parameter "actionEvent".(„„©¬ûÿÿÿÿ
+i
+java:S1104"SMake botINFO a static final constant or non-public and provide accessors if needed.(™—ä
+m
+java:S11044"XMake botUbicacion a static final constant or non-public and provide accessors if needed.(ŠßÅ
+i
+java:S1104%"TMake etiError a static final constant or non-public and provide accessors if needed.(ØÒ´B
+t
+java:S11047"YMake etiNuevoError a static final constant or non-public and provide accessors if needed.(º°¨²úÿÿÿÿ
+H
+java:S1172"2Remove this unused method parameter "actionEvent".(ÊÓí
+m
+java:S11046"XMake botNuevoFich a static final constant or non-public and provide accessors if needed.(³Š-
+s
+java:S1104"XMake botPaneCrear a static final constant or non-public and provide accessors if needed.(±í½÷úÿÿÿÿ
+j
+java:S1104"TMake botCopia a static final constant or non-public and provide accessors if needed.(› „Î
+r
+java:S1104/"WMake botVolverCF a static final constant or non-public and provide accessors if needed.(ò‘ÑÑùÿÿÿÿ
+P
+java:S1128"5Remove this unused import 'java.util.ResourceBundle'.(ýÆ£¯øÿÿÿÿ
+M
+java:S1172L"2Remove this unused method parameter "actionEvent".(Šà²ûÿÿÿÿ
+N
+java:S1172Â"2Remove this unused method parameter "actionEvent".(Ý¹Æˆøÿÿÿÿ
+I
+java:S1172Ì"2Remove this unused method parameter "actionEvent".(¸³Óõ
+s
+java:S1104"XMake paneCabecera a static final constant or non-public and provide accessors if needed.(©×€¥ýÿÿÿÿ
+t
+java:S1104!"YMake fieldRutaFich a static final constant or non-public and provide accessors if needed.(ïšôÝÿÿÿÿÿ
+k
+java:S1104"VMake botVerCont a static final constant or non-public and provide accessors if needed.(ôÄ“M
+l
+java:S1104"VMake botGuardar a static final constant or non-public and provide accessors if needed.(¥Ð†ø
+q
+java:S1104*"[Make fieldRutaUbicCF a static final constant or non-public and provide accessors if needed.(¡ÖûÄ
+j
+java:S1104""UMake areaTexto a static final constant or non-public and provide accessors if needed.(¤¾“T
+K
+java:S1659"0Declare "directSeleccionado" on a separate line.(Äò‘ûúÿÿÿÿ

@@ -1,0 +1,10 @@
+
+I
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ŸÊèşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Èçğúúÿÿÿÿ
+@
+java:S1481"*Remove this unused "resul" local variable.(úÁ×
+K
+java:S18544"5Remove this useless assignment to local variable "y".(âŒÊ™
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÜÇÌÿÿÿÿÿ

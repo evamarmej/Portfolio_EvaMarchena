@@ -1,0 +1,15 @@
+
+s	java:S116"WRename this field "URL_CONEXION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(об├·8зе╚сы.
+>
+java:S1170"!Make this final field static too.(т≈ы≥8ше╚сы.
+t	java:S116"XRename this field "PASSWORD_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(т≈ы≥8зе╚сы.
+>
+java:S1170"!Make this final field static too.(Й÷К⌡8ше╚сы.
+4
+java:S1700"Rename field "conexion"(к╕╢Р8зе╚сы.
+C
+java:S1170"!Make this final field static too.(РфШ╡ЗЪЪЪЪ8зе╚сы.
+>
+java:S1170"!Make this final field static too.(об├·8зе╚сы.
+y	java:S116"XRename this field "USERNAME_BBDD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(РфШ╡ЗЪЪЪЪ8зе╚сы.
+m	java:S116"QRename this field "DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Й÷К⌡8зе╚сы.

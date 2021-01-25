@@ -1,0 +1,100 @@
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title> Formulario </title>       
+        <link rel="stylesheet" href="valid_total.css">
+        <script type="text/javascript" src="valid_total.js"></script>
+	</head>
+	
+	<body>
+        <form name ="formularioContacto" class="formularioTipo1" method="get" id="formulario" action="mailto:emarchenamejias@safareyes.es"> 
+
+            <div id="encabezado"></br><h1>FORMULARIO</h1></br></div>
+
+            <div id="formularioestilo">
+
+                <ul id="lista">
+                    <form name="letradni" action="">
+                        <li id="dni">
+                        <label for="dni">DNI 
+                            <input type="text" class="texto" name="dni" id="calcdni" placeholder="   Introduce tu DNI" onblur="document.formularioContacto.letradni.value = calculadni(document.formularioContacto.calcdni.value);"/>     
+                            Letra <input type="text" class="texto" name="letradni" id="letra" placeholder=" Tu letra es: " readonly/>
+                        </li></br>
+                    </form>
+
+                    <li id="nombre">
+                    <label for="nombre">Nombre <input type="text" class="texto" name="Nombre" id="nom" placeholder="   Introduce tu nombre"/></label>
+                    </li></br>
+
+                    <li id="apellidos">
+                    <label for="apellidos">Apellidos  <input type="text" class="texto" name="Apellidos" id="ape" placeholder="   Introduce tus apellidos"/></label>
+                    </li></br>
+
+                    <li id="fecna">
+                    <label for="fechadenacimiento">Fecha de nacimiento <input type="date" class="texto" name="Fecha_Nacimiento" id="fn" onchange="validarfecha(this)"/></label>
+                    </li></br>
+
+                    <li id="domicilio">
+                    <label for="domicilio">Domicilio <input type="text" class="texto" name="Domicilio" id="dom" placeholder="   Introduce tu dirección"/></label>
+                    </li></br>
+
+                    <li id="codigopostal">
+                    <label for="codigopostal">Código Postal <input type="text" class="texto" name="Código Postal" placeholder="   Introduce tu código postal" id="cp" onkeypress="return solonumeros(event)" onchange="return Validarcp(this)" /></label>
+                    </li></br>
+
+                    <li id="provincia">
+                    <label for="provincia">Provincia <input type="text" class="texto" name="Provincia" id="prov" placeholder="   Introduce tu Provincia"/></label>
+                    </li></br>
+
+                    <li id="telefono">
+                    <label for="telefono">Teléfono <input type="text" class="texto" name="Teléfono" id="tfno" placeholder="   Introduce tu teléfono" onchange="return Validartelefono(this)"/></label>
+                    </li></br>
+
+                    <li id="correomail">
+                    <label for="correoelectronico">Correo Electrónico <input type="text" class="texto" name="Correo" id="correo" placeholder="   Introduce tu email" onblur="validaremail(correo.value);"/></label></br></br>
+                    </li></br>
+
+                    <li id="sexo"><label for="sexo">Sexo
+                        <input type="radio" name="se" id="m"> Mujer </input>
+                        <input type="radio" name="se" id="h"> Hombre </input></label> 
+                    </li></br>
+                    
+                    <li id="estadocivil"> <label for="estadocivil">Estado civil 
+                    <select name="Estado Civil" id="ecivil">
+                        <option id="opcioncero">Introduce tu estado civil</option>
+                        <option value="1">Soltero</option> 
+                        <option value="2">Casado</option> 
+                        <option value="3">Divorciado</option> 
+                        <option value="4">Viudo</option> 
+                        <option value="5">Arrejuntado</option> 
+                    </select></label>
+                    </li></br>
+
+                    <li id="idiomas"><label for="idiomas">Idiomas
+                        <input type="checkbox" name="idioma" id="Español" value="Español"/> <label for="Español">Español</label>
+                        <input type="checkbox" name="idioma" id="Francés" value="Francés"/> <label for="Francés">Francés</label>
+                        <input type="checkbox" name="idioma" id="Inglés" value="Inglés"/> <label for="Inglés">Ingés</label>
+                        <input type="checkbox" name="idioma" id="Alemán" value="Alemán"/> <label for="Alemán">Alemán </label></br></br>
+                        <input type="text" name="Idiomas" id="resul" placeholder=" Posiciona el ratón sobre este campo para conocer tu selección." readonly onmouseover="seleccionaridioma('idioma')"/>
+                    </li></br>
+
+                    <li id="comentarios"> <label for="comentarios">Comentarios <textarea name="Comentarios" id="coment" rows="10" cols="40">Escribe aquí tus comentarios</textarea></label></li></br>
+                    
+                    <li id="cuenta"> <label for="cuentacorriente">Nº Cuenta
+                        <input type="text" id="resultado" name="IBAN" placeholder="Tu IBAN es:" readonly> 
+                        <input type="text" class="cc" id="banco" name="Banco" placeholder="Banco" onblur="validariban()"/> 
+                        <input type="text" class="cc" id="sucursal" name="Sucursal" placeholder="Oficina" onblur="validariban()"/> 
+                        <input type="text" class="cc" id="digitocontrol" name="Dígito de control" placeholder="DC" onblur="validariban()"/> 
+                        <input type="text" class="cc" id="numcuenta" name="Cuenta" placeholder="Cuenta" onblur="validariban()"/></label>
+                    </li></br>
+
+                    <li id="hora"> 
+                        <label for="horadelenvio">Hora de envío <input type="text" class="texto" name="Hora" id="reloj"/></label>
+                    </li></br>
+
+                    <input type="submit" class="boton" value="Enviar" id="botonenviar"/> <input type="reset" class="boton"value="Resetear" id="botonresetear"/>
+                    </ul>
+            </div>
+        </form>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+
+X	java:S125!"<This block of commented-out lines of code should be removed.(€ğäã8ääÈ×.
+D
+java:S1905@"'Remove this unnecessary cast to "long".(¡ù–8ÿŞ É×.
+K
+java:S1874".Remove this use of "Applet"; it is deprecated.(œÕù¸8ääÈ×.
+K
+java:S11214".Extract the assignment out of this expression.(ÜÀµË8ääÈ×.
+P
+java:S11211".Extract the assignment out of this expression.(ÙÚêúÿÿÿÿ8ääÈ×.
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(œÕù¸8ääÈ×.
+I
+java:S1874F",Remove this use of "stop"; it is deprecated.(ÓÍÆá8ääÈ×.
+D
+java:S1905?"'Remove this unnecessary cast to "long".(Ëüåé8¬ĞÀÉ×.
+I
+java:S1874J",Remove this use of "stop"; it is deprecated.(ºÙ…€8ääÈ×.
+B
+java:S1659#" Declare "b2" on a separate line.(ƒáøùÿÿÿÿ8ääÈ×.

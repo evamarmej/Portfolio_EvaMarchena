@@ -1,0 +1,22 @@
+
+L
+java:S1128"*Remove this unused import 'modelo.Cuenta'.(ÕÓÂÄÿÿÿÿÿ8¸Ó²Éä.
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ú¡é´ıÿÿÿÿ8ëêàÈä.
+R
+java:S1128"5Remove this unused import 'java.util.logging.Logger'.(ƒ¥óš8ëêàÈä.
+O
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8¸Ó²Éä.
+L
+java:S1128	"/Remove this unused import 'java.sql.Statement'.(ÏÖÔø8ëêàÈä.
+K
+java:S1128"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8ëêàÈä.
+M
+java:S1128
+"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÆŸÉä.
+Q
+java:S1128"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶8ëêàÈä.
+W
+java:S1068"5Remove this unused "preparedStatement" private field.(¿ä Óşÿÿÿÿ8ëêàÈä.
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ëêàÈä.

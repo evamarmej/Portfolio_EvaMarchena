@@ -1,0 +1,13 @@
+USE empresa;
+
+CREATE TABLE departamento (
+id_dpto INT (4) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nombre_dpto VARCHAR (30) NOT NULL,
+num_emp_dpto INT (6) NOT NULL,
+jefe_dpto VARCHAR (30) NOT NULL,
+servicios VARCHAR (30) NOT NULL
+);
+
+
+INSERT INTO departamento (nombre_dpto, num_emp_dpto, jefe_dpto, servicios) VALUES ("RRHH", 23, "Julia Márquez García", "Contratación");
+INSERT INTO departamento (nombre_dpto, num_emp_dpto, jefe_dpto, servicios) VALUES ("Ventas", 18, "Andrés Villagrán Mejías", "Maquinaria");

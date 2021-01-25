@@ -1,0 +1,30 @@
+CREATE DATABASE taller;
+USE taller;
+
+CREATE TABLE operarios(
+idop INT AUTO_INCREMENT PRIMARY key,
+dni VARCHAR (9) NOT NULL,
+nombre VARCHAR (50) NOT NULL,
+apellidos VARCHAR (50) NOT NULL,
+direccion VARCHAR(50) NOT NULL,
+telefono VARCHAR (9) NOT NULL);
+
+INSERT INTO operarios (dni, nombre, apellidos, direccion, telefono) VALUES ("77587860M", "Paco", "Pérez", "Calle Fresa Nº 2, 41002 Sevilla", "665998332");
+INSERT INTO operarios (dni, nombre, apellidos, direccion, telefono) VALUES ("48529863F", "Ana", "Díaz", "Calle Amancio Renes Nº 63, 41702 Dos Hermanas", "655394092");
+
+
+CREATE TABLE trabajos(
+idtr INT AUTO_INCREMENT PRIMARY KEY,
+descripcion VARCHAR (150) NOT NULL,
+numhoras FLOAT DEFAULT 0,
+precio FLOAT DEFAULT 0,
+preciomaterial FLOAT,
+tipotrabajo VARCHAR (20) NOT NULL,
+estado VARCHAR (20) NOT NULL,
+fechacomienzo DATE NOT NULL,
+fechafin DATE,
+idopt INT, 
+constraint FOREIGN KEY fkoper (idopt) references operarios (idop) ON DELETE SET NULL
+);
+
+INSERT INTO trabajos (descripcion, preciomaterial, tipotrabajo, estado, fechacomienzo, idopt) VALUES ("Cambio correa distribución", 150.21, "Reparación Mecánica", "En proceso", '2020-12-06', 1);

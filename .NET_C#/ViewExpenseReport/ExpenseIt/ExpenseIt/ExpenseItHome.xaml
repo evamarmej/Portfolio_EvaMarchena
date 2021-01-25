@@ -1,0 +1,79 @@
+﻿<Page x:Class="ExpenseIt.ExpenseItHome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ExpenseIt"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="ExpenseIt - Home">
+
+    <Grid>
+
+        <Grid.Resources>
+            <!-- Expense Report Data -->
+            <XmlDataProvider x:Key="ExpenseDataSource" XPath="Expenses">
+                <x:XData>
+                    <Expenses xmlns="">
+                        <Person Name="Sara Repeto García" Department="Jurídico">
+                            <Expense ExpenseType="Comida" ExpenseAmount="50.00€"/>
+                            <Expense ExpenseType="Transporte" ExpenseAmount="50.00€" />
+                        </Person>
+                        <Person Name="Jose García Barrionuevo" Department="Marketing">
+                            <Expense ExpenseType="Impresión documentos" ExpenseAmount="50.00€"/>
+                            <Expense ExpenseType="Regalo" ExpenseAmount="125.00€" />
+                        </Person>
+                        <Person Name="Pedro Rodríguez Gallego" Department="Ingeniería">
+                            <Expense ExpenseType="Suscripción revista" ExpenseAmount="50.00€"/>
+                            <Expense ExpenseType="Nueva televisión" ExpenseAmount="600.00€" />
+                            <Expense ExpenseType="Juego PC" ExpenseAmount="50.00€" />
+                        </Person>
+                        <Person Name="Eva María Marchena Mejías" Department="Finanzas">
+                            <Expense ExpenseType="Cena" ExpenseAmount="100.00€" />
+                        </Person>
+                    </Expenses>
+                </x:XData>
+            </XmlDataProvider>
+
+            <!-- Name item template -->
+            <DataTemplate x:Key="nameItemTemplate">
+                <Label Content="{Binding XPath=@Name}"/>
+            </DataTemplate>
+
+        </Grid.Resources>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="fondoNuevo.jpg"  />
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="230"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- People list -->
+
+        <Label Grid.Column="1" Style="{StaticResource headerTextStyle}" Foreground="#FFAE037F" FontFamily="Century Gothic" >
+            Ver informe de gastos
+        </Label>
+
+        <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource listHeaderStyle}" Background="#FF953179" Margin="0,0,17,0">
+            <Label Style="{StaticResource listHeaderTextStyle}" FontFamily="Century Gothic">Nombres</Label>
+        </Border>
+        <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2" 
+         ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"
+         ItemTemplate="{StaticResource nameItemTemplate}" Margin="0,0,17,10" FontFamily="Century Gothic">
+        </ListBox>
+
+        <!-- View report button -->
+        <Button Grid.Column="1" Grid.Row="3" Click="Button_Click" Style="{StaticResource buttonStyle}" Background="#FF8D3273" FontFamily="Century Gothic" Foreground="White" Margin="0,0,17,10" Width="108">Ver</Button>
+        <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="86" Source="logotipo.png" Margin="10,10,0,0"/>
+    </Grid>
+</Page>

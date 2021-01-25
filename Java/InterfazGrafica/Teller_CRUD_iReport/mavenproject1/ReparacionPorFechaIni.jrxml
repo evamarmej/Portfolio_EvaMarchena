@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Reparaciones" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4eedbb89-b4f6-4469-9ab6-f642a1688cf7">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Taller.xml"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#EEEFF0"/>
+		</conditionalStyle>
+	</style>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#CACED0">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#D8D8D8"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="tableDataset" uuid="f13e6d36-5148-4ecc-bbe3-3035def80980">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="fechaini" class="java.lang.String"/>
+	<parameter name="Logo" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM trabajos WHERE fechacomienzo = $P{fechaini}]]>
+	</queryString>
+	<field name="idtr" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idtr"/>
+		<property name="com.jaspersoft.studio.field.label" value="idtr"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descripcion"/>
+		<property name="com.jaspersoft.studio.field.label" value="descripcion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numhoras" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="numhoras"/>
+		<property name="com.jaspersoft.studio.field.label" value="numhoras"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="precio" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="precio"/>
+		<property name="com.jaspersoft.studio.field.label" value="precio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="preciomaterial" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="preciomaterial"/>
+		<property name="com.jaspersoft.studio.field.label" value="preciomaterial"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipotrabajo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tipotrabajo"/>
+		<property name="com.jaspersoft.studio.field.label" value="tipotrabajo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechacomienzo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fechacomienzo"/>
+		<property name="com.jaspersoft.studio.field.label" value="fechacomienzo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechafin" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fechafin"/>
+		<property name="com.jaspersoft.studio.field.label" value="fechafin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idopt" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idopt"/>
+		<property name="com.jaspersoft.studio.field.label" value="idopt"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="trabajos"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="92" splitType="Stretch">
+			<staticText>
+				<reportElement x="380" y="10" width="50" height="20" forecolor="#002626" uuid="0f86baff-6386-4f3f-b3fe-2388707babe8"/>
+				<box rightPadding="4"/>
+				<textElement textAlignment="Right">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="430" y="10" width="119" height="20" forecolor="#002626" uuid="bb10dbe1-0a4f-4722-9953-c163b63cf979"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="95" y="0" width="205" height="25" forecolor="#035959" uuid="e622555d-198b-4ccd-a4a1-c59c53304058">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Century Gothic" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Talleres Eva]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="55" width="205" height="15" forecolor="#035959" uuid="b8cc42fd-b569-497d-834d-7e854040ad18"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[612345678 info@tallereseva.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="25" width="205" height="15" forecolor="#035959" uuid="c226e44d-3bb5-4145-b0b3-903bf1d79fde"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[Calle Feria Nº 3 Local ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="40" width="205" height="15" forecolor="#035959" uuid="b96f7183-44f8-43ad-ba60-43d8fbf50b6e"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[CP. 41002 Sevilla]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="0" width="70" height="70" uuid="a81ea89f-1aa3-4d03-a1d6-5868ae258cb3"/>
+				<imageExpression><![CDATA[$P{Logo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="40">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="60" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="24feb1bb-706c-4f2b-87b4-fbe4ecac6638">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c7aa98a-2f48-410b-ad55-5551c25e9dfd"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Inicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="60" y="0" width="35" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="d3bd6248-e930-4098-9599-75708433ddeb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0575d089-3604-4643-94b3-1d2b91eb32fb"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="95" y="0" width="103" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="736cf521-2390-4bbf-99a5-3d09588986b9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be8e85c3-5d62-4b02-87bd-288316aeb227"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descripción]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="198" y="0" width="40" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="e5220d2e-5f86-4880-823b-a9868bc688e6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5b9090c4-a40e-4146-9e42-6f5202cccce1"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="510" y="0" width="45" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="f6c518f3-b0a2-489f-89e3-e9e7b8322546">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c3df7f3-911e-4803-91dc-72288da279f2"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Precio Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="238" y="0" width="50" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="5166e21a-201c-4634-a148-ebf35f03a20e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcba3102-fc84-45ad-bea6-312feee4cda7"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P. Material]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="288" y="0" width="70" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="d16b4eaf-7522-4d1b-a098-e4385b42d35c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af80ec35-b317-4b93-afd5-f501a9f78009"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Trabajo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="358" y="0" width="50" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="33685ee6-0069-4673-aa3a-5111322e7c18">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4453c3fb-8b9a-4b10-8e6e-a7dd123ce577"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="408" y="0" width="62" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="f3149c9c-e125-43f7-bede-fa01d01485ec">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="318863f8-469d-42e7-af51-a3aeccb2cf38"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Fin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="470" y="0" width="40" height="40" forecolor="#002626" backcolor="#D5EAEB" uuid="72124648-4da1-466f-a16d-47f3b5c2225d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="deeb9a75-f6d9-4bf4-9a0b-648b2fede529"/>
+				</reportElement>
+				<box leftPadding="3">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Operario]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40">
+			<textField>
+				<reportElement x="0" y="0" width="60" height="40" forecolor="#002626" uuid="b3116de4-27a9-4d6e-bf94-0d92e0b3a4f6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c7aa98a-2f48-410b-ad55-5551c25e9dfd"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechacomienzo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="0" width="35" height="40" forecolor="#002626" uuid="9ca40449-2e2f-4243-ab7d-a2d1d877cc13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0575d089-3604-4643-94b3-1d2b91eb32fb"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idtr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="0" width="103" height="40" forecolor="#002626" uuid="b023f421-0ae9-4433-81fd-e56c18784525">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be8e85c3-5d62-4b02-87bd-288316aeb227"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="198" y="0" width="40" height="40" forecolor="#002626" uuid="bb680bc0-7db0-4074-97ce-50ee5013ac82">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5b9090c4-a40e-4146-9e42-6f5202cccce1"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numhoras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="0" width="45" height="40" forecolor="#002626" uuid="9dbac4e5-9f1f-42df-8fdd-0250e2336e4f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c3df7f3-911e-4803-91dc-72288da279f2"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{precio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="0" width="50" height="40" forecolor="#002626" uuid="2617b6b4-9e05-4a8e-b8ee-8af26052130d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bcba3102-fc84-45ad-bea6-312feee4cda7"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{preciomaterial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="0" width="70" height="40" forecolor="#002626" uuid="6f2e80ad-e55e-4544-aa30-17f024903075">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af80ec35-b317-4b93-afd5-f501a9f78009"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipotrabajo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="0" width="50" height="40" forecolor="#002626" uuid="dad111e3-67db-4d25-9772-62e7b10e4cdb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4453c3fb-8b9a-4b10-8e6e-a7dd123ce577"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="0" width="62" height="40" forecolor="#002626" uuid="1c3dd264-6c72-48cc-a359-ff4b26a70ce8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="318863f8-469d-42e7-af51-a3aeccb2cf38"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechafin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="0" width="40" height="40" forecolor="#002626" uuid="3e857377-72c8-4f0d-a8b0-2420f83f2d76">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="deeb9a75-f6d9-4bf4-9a0b-648b2fede529"/>
+				</reportElement>
+				<box topPadding="5" leftPadding="5">
+					<pen lineWidth="0.5" lineColor="#002626"/>
+				</box>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idopt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="30">
+			<textField>
+				<reportElement x="455" y="0" width="100" height="30" forecolor="#002626" uuid="a3846c25-4d43-48b7-9725-58c87eeafb12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+</jasperReport>

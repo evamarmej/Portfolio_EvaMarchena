@@ -1,0 +1,279 @@
+body{
+    background-color: rgb(128, 59, 59);
+}
+h1{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgb(128, 59, 59);
+    border-radius: 15px;
+    margin-left:100;
+    margin-right:80;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#formulario{
+    text-align:center;
+    background-color: #EE6C6C ;
+    padding-bottom: 20;
+    margin-left: 600;
+    margin-right: 600;
+    border-radius: 15px;
+}
+#lista{
+    list-style:none;
+}
+#calcdni{
+    width: 180px; 
+    margin-left: 16px; 
+    margin-right: 30px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#dni{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#letra{
+    width: 80px; 
+    background-color: #A4A4A4;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nom{
+    width: 326px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#nombre{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#ape{
+    width: 317px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#apellidos{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fn{
+    width: 234px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#fecna{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#dom{
+    width: 317px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#domicilio{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cp{
+    width: 283px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#codigopostal{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#prov{
+    width: 318px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#provincia{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tfno{
+    width: 322px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#telefono{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#correo{
+    width: 249px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#correomail{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sexo{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#m{
+    width: 30px;
+    margin-left:108px;
+}
+#h{
+    width:30px;
+    margin-left:60;
+}
+#ecivil{
+    width: 296px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    background-color: rgb(238, 237, 237);
+}
+#estadocivil{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#idiomas{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#resul{
+    width: 384px; 
+    background-color:#A4A4A4;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#coment{
+    margin-left: 7px; 
+    width: 287px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#comentarios{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Español{
+    margin-left:5px;
+
+}
+#resultado{
+    width: 79px; 
+    background-color:#A4A4A4;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cuenta{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#banco{
+    width : 48px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#sucursal{
+    width : 48px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#digitocontrol{
+    width: 23px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#numcuenta{
+    width : 95px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#hora{
+    color: rgb(70, 31, 31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#reloj{
+    width: 286px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(238, 237, 237);
+}
+#botonenviar{
+    width: 120px; 
+    margin-left: 30px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(70, 31, 31);
+    color: #FFFFFF;
+}
+#botonresetear{
+    width: 120px;
+    border-radius:8px;
+    border:none;
+    padding-top: 8;
+    padding-bottom: 8;
+    background-color: rgb(70, 31, 31);
+    color: #FFFFFF;
+}

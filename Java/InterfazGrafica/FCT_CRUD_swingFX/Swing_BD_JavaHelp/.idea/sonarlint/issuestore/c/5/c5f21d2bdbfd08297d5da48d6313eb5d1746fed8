@@ -1,0 +1,18 @@
+
+‚
+java:S1192"gDefine a constant instead of duplicating this literal "jdbc:mariadb://localhost:3306/Proy3TE1" 3 times.(Ú°‰ùÿÿÿÿ
+m
+java:S1192"XDefine a constant instead of duplicating this literal "org.mariadb.jdbc.Driver" 3 times.(áğöX
+<
+java:S1659"!Declare "ape" on a separate line.(ÓÜâñıÿÿÿÿ
+>	java:S108*")Either remove or fill this block of code.(±ÛÓè
+C	java:S108/")Either remove or fill this block of code.( Œ¢‚ùÿÿÿÿ
+:
+java:S1659?"$Declare "codEmp" on a separate line.(¤¨
+:
+java:S1659?"$Declare "codTut" on a separate line.(¤¨
+C
+java:S1125S"(Remove the literal "true" boolean value.(ğä˜çúÿÿÿÿ
+C	java:S108d")Either remove or fill this block of code.( Œ¢‚ùÿÿÿÿ
+>	java:S108w")Either remove or fill this block of code.(±ÛÓè
+C	java:S108|")Either remove or fill this block of code.( Œ¢‚ùÿÿÿÿ

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GraficoBarras" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2f572003-1a03-4d0e-860e-e9ec45ed556e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Visor.xml"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT COUNT(titular)*100/(SELECT COUNT(titular) FROM cuentas) FROM cuentas WHERE saldo<1000
+UNION
+SELECT COUNT(titular)*100/(SELECT COUNT(titular) FROM cuentas) FROM cuentas WHERE saldo>=1000]]>
+	</queryString>
+	<field name="COUNT(titular)*100/(SELECT COUNT(titular) FROM cuentas)" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="COUNT(titular)*100/(SELECT COUNT(titular) FROM cuentas)"/>
+		<property name="com.jaspersoft.studio.field.label" value="COUNT(titular)*100/(SELECT COUNT(titular) FROM cuentas)"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="251" splitType="Stretch">
+			<pieChart>
+				<chart evaluationTime="Report">
+					<reportElement x="144" y="0" width="270" height="200" uuid="bc2c23aa-d093-4bec-890d-c89f5384d63f"/>
+					<chartTitle color="#0A3F40">
+						<font fontName="Century Gothic"/>
+						<titleExpression><![CDATA["Porcentajes de clientes con más y menos de 1000 €"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle color="#0A3F40">
+						<font fontName="Century Gothic"/>
+					</chartSubtitle>
+					<chartLegend textColor="#0A3F40"/>
+				</chart>
+				<pieDataset>
+					<dataset resetType="Report"/>
+					<keyExpression><![CDATA[$F{COUNT(titular)*100/(SELECT COUNT(titular) FROM cuentas)}]]></keyExpression>
+					<valueExpression><![CDATA[$F{COUNT(titular)*100/(SELECT COUNT(titular) FROM cuentas)}]]></valueExpression>
+				</pieDataset>
+				<piePlot>
+					<plot>
+						<seriesColor seriesOrder="0" color="#7AC1C2"/>
+						<seriesColor seriesOrder="1" color="#C88BC9"/>
+					</plot>
+					<itemLabel color="#0A3F40">
+						<font fontName="Century Gothic"/>
+					</itemLabel>
+				</piePlot>
+			</pieChart>
+			<staticText>
+				<reportElement x="201" y="210" width="170" height="20" forecolor="#0A3F40" uuid="f854ad6a-b492-41a4-b07a-349ac6454eb0"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<text><![CDATA[Clientes con más de 1000€]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="230" width="170" height="20" forecolor="#0A3F40" uuid="86bb48ad-5d6b-482a-8f1a-10aac5d63eac"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<text><![CDATA[Clientes con menos de 1000€]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="185" y="215" width="11" height="11" backcolor="#C88BC9" uuid="33b84b0d-231a-46a5-8ad5-3c15db36814c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="185" y="235" width="11" height="11" backcolor="#7AC1C2" uuid="2bec3161-9260-4351-91a9-8228c73ee5cc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="176" y="210" width="201" height="41" uuid="991653ec-13bf-43f7-8d5f-cb61378a2e82"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineStyle="Dotted" lineColor="#0A3F40"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</summary>
+</jasperReport>

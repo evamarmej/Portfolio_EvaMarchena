@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Actividad7.iml" filepath="$PROJECT_DIR$/.idea/Actividad7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Actividad7_ThreadCon/Actividad7_ThreadCon.iml" filepath="$PROJECT_DIR$/Thread/Actividad7_ThreadCon/Actividad7_ThreadCon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Actividad7_ThreadSin/Actividad7_ThreadSin.iml" filepath="$PROJECT_DIR$/Thread/Actividad7_ThreadSin/Actividad7_ThreadSin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Runnable/Actividad7_runnableCon/Actividad7_runnableCon.iml" filepath="$PROJECT_DIR$/Runnable/Actividad7_runnableCon/Actividad7_runnableCon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Runnable/Actividad7_runnableSin/Actividad7_runnableSin.iml" filepath="$PROJECT_DIR$/Runnable/Actividad7_runnableSin/Actividad7_runnableSin.iml" />
+    </modules>
+  </component>
+</project>

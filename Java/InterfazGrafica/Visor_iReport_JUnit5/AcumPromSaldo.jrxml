@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AcumPromSaldo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="25afe841-b9b2-4a27-9643-4dc238a66c66">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Visor.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select round(sum(saldo),2) "Acumulado", round(avg(saldo),2) "Promedio", nacionalidad from cuentas group by nacionalidad]]>
+	</queryString>
+	<field name="Acumulado" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Acumulado"/>
+		<property name="com.jaspersoft.studio.field.label" value="Acumulado"/>
+	</field>
+	<field name="Promedio" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Promedio"/>
+		<property name="com.jaspersoft.studio.field.label" value="Promedio"/>
+	</field>
+	<field name="nacionalidad" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nacionalidad"/>
+		<property name="com.jaspersoft.studio.field.label" value="nacionalidad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="cuentas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="Acumulado1" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{Acumulado}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="85" y="0" width="390" height="30" forecolor="#0A3F40" backcolor="#CFE7E8" uuid="abb9939d-c735-4787-a680-488fca1d828a"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saldos por nacionalidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="85" y="30" width="130" height="30" forecolor="#0A3F40" backcolor="#F5FAFA" uuid="34fce03b-a1e0-4e70-b878-c3e2c9865f85"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nacionalidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="215" y="30" width="130" height="30" forecolor="#0A3F40" backcolor="#F5FAFA" uuid="5e479f8d-cef9-420a-a042-8a6e5eb88192"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Acumulado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="345" y="30" width="130" height="30" forecolor="#0A3F40" backcolor="#F5FAFA" uuid="768fab12-5bd9-4a4a-8472-7583b86a6bff"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Promedio]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="85" y="0" width="130" height="20" forecolor="#0A3F40" uuid="9a8d2d8d-6b66-4149-8f97-ea6e9a8020bd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4a873b04-0281-48f2-85a1-f30eaa14a926"/>
+				</reportElement>
+				<box leftPadding="5">
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nacionalidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="215" y="0" width="130" height="20" forecolor="#0A3F40" uuid="ca980c3d-7da6-4a16-ad71-0680862c2688">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f3581b2-3141-4c8f-ae57-f4c6a30d2b28"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Acumulado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="130" height="20" forecolor="#0A3F40" uuid="6522cae3-4906-4c03-94e9-90ce1b235563">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="36ca246e-bab4-4340-9ad3-ddaea361a72a"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Promedio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="229">
+			<staticText>
+				<reportElement mode="Opaque" x="85" y="0" width="260" height="20" forecolor="#0A3F40" backcolor="#CFE7E8" uuid="aea8d73a-5975-4553-a560-01095b47e3bb"/>
+				<box leftPadding="5">
+					<pen lineWidth="0.75" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saldo total acumulado:]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="345" y="0" width="130" height="20" forecolor="#0A3F40" uuid="752b6ffb-bf68-465c-8869-3ff6f010b7d3"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{Acumulado1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

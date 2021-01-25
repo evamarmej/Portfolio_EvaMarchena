@@ -1,0 +1,13 @@
+
+K
+java:S1874".Remove this use of "Applet"; it is deprecated.(¿æÖ8ºåÆ×.
+J
+java:S1121".Extract the assignment out of this expression.(øº¤=8ºåÆ×.
+B
+java:S1659" Declare "b2" on a separate line.(ƒáøùÿÿÿÿ8ºåÆ×.
+J	java:S1082")Either remove or fill this block of code.(ÊûÒÎıÿÿÿÿ8ºåÆ×.
+K
+java:S1121".Extract the assignment out of this expression.(èÿİ´8ºåÆ×.
+D
+java:S1905+"'Remove this unnecessary cast to "long".(á»ú¡8ºåÆ×.
+t	java:S116	"SRename this field "CONTADOR" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë¤¦Èûÿÿÿÿ8ºåÆ×.
